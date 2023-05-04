@@ -391,7 +391,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = App;
 
@@ -418,24 +418,22 @@ var _data2 = _interopRequireDefault(_data);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-    var cards = _data2.default.map(function (item) {
-        return _react2.default.createElement(_Card2.default, {
-            key: item.id,
-            item: item
-        });
-    });
+  var cards = _data2.default.map(function (item) {
+    return _react2.default.createElement(_Card2.default, { key: item.id, item: item });
+  });
 
-    // <Hero />
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(_Navbar2.default, null),
-        _react2.default.createElement(
-            "section",
-            { className: "cards-list" },
-            cards
-        )
-    );
+  // <Hero />
+  return _react2.default.createElement(
+    "div",
+    null,
+    _react2.default.createElement(_Navbar2.default, null),
+    _react2.default.createElement(_Hero2.default, null),
+    _react2.default.createElement(
+      "section",
+      { className: "cards-list" },
+      cards
+    )
+  );
 }
 
 /***/ }),
